@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="200.0" prefWidth="225.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wurts.view.VectorEditSceneController">
+   <children>
+      <BorderPane layoutX="37.0" layoutY="34.0" prefHeight="234.0" prefWidth="237.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Vector" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Text>
+         </top>
+         <center>
+            <GridPane BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="i" GridPane.halignment="CENTER">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="j" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="k" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Text>
+                  <TextField fx:id="inputI" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="inputJ" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="inputK" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <Polygon fill="WHITE" rotate="90.0" scaleX="0.125" scaleY="0.125" stroke="BLACK" strokeType="INSIDE" strokeWidth="8.0" translateX="40.0" GridPane.halignment="RIGHT">
+                    <points>
+                      <Double fx:value="-50.0" />
+                      <Double fx:value="40.0" />
+                      <Double fx:value="50.0" />
+                      <Double fx:value="40.0" />
+                      <Double fx:value="0.0" />
+                      <Double fx:value="-60.0" />
+                    </points>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Polygon>
+                  <Polygon fill="WHITE" rotate="90.0" scaleX="0.125" scaleY="0.125" stroke="BLACK" strokeType="INSIDE" strokeWidth="8.0" translateX="40.0" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                     <points>
+                        <Double fx:value="-50.0" />
+                        <Double fx:value="40.0" />
+                        <Double fx:value="50.0" />
+                        <Double fx:value="40.0" />
+                        <Double fx:value="0.0" />
+                        <Double fx:value="-60.0" />
+                     </points>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Polygon>
+                  <Polygon fill="WHITE" rotate="90.0" scaleX="0.125" scaleY="0.125" stroke="BLACK" strokeType="INSIDE" strokeWidth="8.0" translateX="40.0" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                     <points>
+                        <Double fx:value="-50.0" />
+                        <Double fx:value="40.0" />
+                        <Double fx:value="50.0" />
+                        <Double fx:value="40.0" />
+                        <Double fx:value="0.0" />
+                        <Double fx:value="-60.0" />
+                     </points>
+                  </Polygon>
+               </children>
+            </GridPane>
+         </center>
+         <bottom>
+            <SplitPane dividerPositions="0.5" prefHeight="34.0" prefWidth="225.0" BorderPane.alignment="CENTER">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="32.0" prefWidth="108.0">
+                     <children>
+                        <BorderPane prefHeight="32.0" prefWidth="109.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <center>
+                              <Button mnemonicParsing="false" onAction="#handleCancel" text="Cancel" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="32.0" prefWidth="137.0">
+                     <children>
+                        <BorderPane layoutX="-38.0" layoutY="-99.0" prefHeight="32.0" prefWidth="108.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <center>
+                              <Button mnemonicParsing="false" onAction="#handleAccept" text="Accept" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

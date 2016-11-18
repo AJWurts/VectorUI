@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="398.0" prefWidth="656.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wurts.view.MainSceneController">
+   <children>
+      <SplitPane dividerPositions="0.29510703363914376" layoutX="-1.0" layoutY="-3.0" maxWidth="555.0" minWidth="555.0" prefHeight="398.0" prefWidth="555.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane maxWidth="180.0" minHeight="0.0" minWidth="180.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <AnchorPane layoutX="-18.0" layoutY="306.0" prefHeight="396.0" prefWidth="152.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <SplitPane dividerPositions="0.7360406091370558" maxHeight="396.0" minHeight="396.0" minWidth="152.0" orientation="VERTICAL" prefHeight="396.0" prefWidth="152.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                 <children>
+                                    <TableView fx:id="vectorTable" maxHeight="287.0" minHeight="287.0" prefHeight="287.0" prefWidth="188.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <columns>
+                                        <TableColumn fx:id="vectorColumn" prefWidth="187.0" text="Vectors" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                 <children>
+                                    <GridPane maxHeight="101.0" minHeight="101.0" prefHeight="101.0" prefWidth="176.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleSetV1" prefWidth="80.0" text="Vector 1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                          <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleSetV2" prefWidth="80.0" text="Vector 2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                          <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleAddV" prefHeight="25.0" prefWidth="80.0" text="Add" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                          <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleRemV" prefWidth="80.0" text="Remove" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                          <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleGraph" prefWidth="80.0" text="Graph??" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                                          <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleEditV" prefWidth="80.0" text="Edit" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="396.0" prefWidth="424.0">
+               <children>
+                  <SplitPane dividerPositions="0.15228426395939088" maxHeight="396.0" maxWidth="458.0" minHeight="396.0" minWidth="458.0" orientation="VERTICAL" prefHeight="396.0" prefWidth="458.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <GridPane maxHeight="194.0" minHeight="194.0" prefHeight="194.0" prefWidth="456.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vector 2:" wrappingWidth="106.13671875" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vector 1:" wrappingWidth="106.13671875">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <TextField fx:id="v1" editable="false" style="-fx-background-color: transparent; -fx-background-insets: 0px;" GridPane.rowIndex="1">
+                                       <GridPane.margin>
+                                          <Insets left="8.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <TextField fx:id="v2" editable="false" style="-fx-background-color: transparent; -fx-background-insets: 0px;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <GridPane.margin>
+                                          <Insets left="8.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <GridPane layoutX="88.0" layoutY="69.0" maxHeight="331.0" minHeight="331.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Added" wrappingWidth="105.873046875" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Subtracted" wrappingWidth="82.13671875" GridPane.rowIndex="1" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dot Product" wrappingWidth="123.13671875" GridPane.rowIndex="3" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cross Product" GridPane.rowIndex="2" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Magnitude" GridPane.rowIndex="8" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Unit Vector" GridPane.rowIndex="9" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Magnitude" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                                       <GridPane.margin>
+                                          <Insets left="8.0" />
+                                       </GridPane.margin></Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Unit Vector" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                                       <GridPane.margin>
+                                          <Insets left="8.0" />
+                                       </GridPane.margin></Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Multiplied" GridPane.rowIndex="4" />
+                                    <Text layoutY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Divided" GridPane.rowIndex="6" />
+                                    <TextField fx:id="v1Mult" prefWidth="10.0" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.vgrow="SOMETIMES">
+                                       <GridPane.margin>
+                                          <Insets left="90.0" right="60.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <TextField fx:id="v1Div" GridPane.rowIndex="6">
+                                       <GridPane.margin>
+                                          <Insets left="90.0" right="60.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleEnterMultV1" text="Enter" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                                       <GridPane.margin>
+                                          <Insets right="8.0" />
+                                       </GridPane.margin>
+                                    </Button>
+                                    <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleEnterDivV1" text="Enter" GridPane.halignment="RIGHT" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+                                       <GridPane.margin>
+                                          <Insets right="8.0" />
+                                       </GridPane.margin>
+                                    </Button>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Multiplied" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                       <GridPane.margin>
+                                          <Insets left="8.0" />
+                                       </GridPane.margin></Text>
+                                    <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleEnterMultV2" text="Enter" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                                       <GridPane.margin>
+                                          <Insets right="8.0" />
+                                       </GridPane.margin>
+                                    </Button>
+                                    <TextField fx:id="v2Mult" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                       <GridPane.margin>
+                                          <Insets left="90.0" right="60.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <Button alignment="CENTER" contentDisplay="CENTER" layoutX="382.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleEnterDivV2" text="Enter" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+                                       <GridPane.margin>
+                                          <Insets right="8.0" />
+                                       </GridPane.margin>
+                                    </Button>
+                                    <Text layoutX="238.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Divided" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="6">
+                                       <GridPane.margin>
+                                          <Insets left="8.0" />
+                                       </GridPane.margin>
+                                    </Text>
+                                    <TextField fx:id="v2Div" layoutX="328.0" layoutY="185.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                       <GridPane.margin>
+                                          <Insets left="90.0" right="60.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleSaveAddedV" prefWidth="60.0" text="Save " GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+                                       <GridPane.margin>
+                                          <Insets right="8.0" />
+                                       </GridPane.margin>
+                                    </Button>
+                                    <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleSaveSubV" prefWidth="60.0" text="Save" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                       <GridPane.margin>
+                                          <Insets right="8.0" />
+                                       </GridPane.margin>
+                                    </Button>
+                                    <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleSaveCrossV" prefWidth="60.0" text="Save" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                       <GridPane.margin>
+                                          <Insets right="8.0" />
+                                       </GridPane.margin>
+                                    </Button>
+                                    <TextField fx:id="addResult" editable="false" style="-fx-background-color: transparent; -fx-background-insets: 0px;" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
+                                       <GridPane.margin>
+                                          <Insets right="75.0" />
+                                       </GridPane.margin>
+                                       <cursor>
+                                          <Cursor fx:constant="DISAPPEAR" />
+                                       </cursor>
+                                    </TextField>
+                                    <TextField fx:id="subResult" editable="false" style="-fx-background-color: transparent; -fx-background-insets: 0px;" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                                       <cursor>
+                                          <Cursor fx:constant="DISAPPEAR" />
+                                       </cursor>
+                                       <GridPane.margin>
+                                          <Insets right="75.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <TextField fx:id="crossResult" editable="false" style="-fx-background-color: transparent; -fx-background-insets: 0px;" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                                       <cursor>
+                                          <Cursor fx:constant="DISAPPEAR" />
+                                       </cursor>
+                                       <GridPane.margin>
+                                          <Insets right="75.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <TextField fx:id="dotResult" editable="false" style="-fx-background-color: transparent; -fx-background-insets: 0px;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                       <cursor>
+                                          <Cursor fx:constant="DISAPPEAR" />
+                                       </cursor>
+                                    </TextField>
+                                    <TextField fx:id="v1MulResult" editable="false" style="-fx-background-color: transparent; -fx-background-insets: 0px;" GridPane.rowIndex="5">
+                                       <cursor>
+                                          <Cursor fx:constant="DISAPPEAR" />
+                                       </cursor>
+                                       <GridPane.margin>
+                                          <Insets left="8.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <TextField fx:id="v2MulResult" editable="false" style="-fx-background-color: transparent; -fx-background-insets: 0px;" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                       <cursor>
+                                          <Cursor fx:constant="DISAPPEAR" />
+                                       </cursor>
+                                       <GridPane.margin>
+                                          <Insets left="8.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <TextField fx:id="v1DivResult" editable="false" style="-fx-background-color: transparent; -fx-background-insets: 0px;" GridPane.rowIndex="7">
+                                       <cursor>
+                                          <Cursor fx:constant="DISAPPEAR" />
+                                       </cursor>
+                                       <GridPane.margin>
+                                          <Insets left="8.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <TextField fx:id="v2DivResult" editable="false" style="-fx-background-color: transparent; -fx-background-insets: 0px;" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                       <cursor>
+                                          <Cursor fx:constant="DISAPPEAR" />
+                                       </cursor>
+                                       <GridPane.margin>
+                                          <Insets left="8.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <TextField fx:id="v2MagResult" alignment="CENTER_RIGHT" editable="false" style="-fx-background-color: transparent; -fx-background-insets: 0px;" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                                       <cursor>
+                                          <Cursor fx:constant="DISAPPEAR" />
+                                       </cursor>
+                                       <GridPane.margin>
+                                          <Insets left="75.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <TextField fx:id="v1MagResult" alignment="CENTER_RIGHT" editable="false" style="-fx-background-color: transparent; -fx-background-insets: 0px;" GridPane.rowIndex="8">
+                                       <cursor>
+                                          <Cursor fx:constant="DISAPPEAR" />
+                                       </cursor>
+                                       <GridPane.margin>
+                                          <Insets left="75.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <TextField fx:id="v2UnitResult" editable="false" style="-fx-background-color: transparent; -fx-background-insets: 0px;" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                                       <cursor>
+                                          <Cursor fx:constant="DISAPPEAR" />
+                                       </cursor>
+                                       <GridPane.margin>
+                                          <Insets left="8.0" right="75.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <TextField fx:id="v1UnitResult" editable="false" style="-fx-background-color: transparent; -fx-background-insets: 0px;" GridPane.rowIndex="10">
+                                       <cursor>
+                                          <Cursor fx:constant="DISAPPEAR" />
+                                       </cursor>
+                                       <GridPane.margin>
+                                          <Insets left="8.0" right="75.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleSaveUnitV1" prefWidth="60.0" text="Save" GridPane.halignment="RIGHT" GridPane.rowIndex="10" GridPane.valignment="CENTER">
+                                       <GridPane.margin>
+                                          <Insets right="5.0" />
+                                       </GridPane.margin>
+                                    </Button>
+                                    <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleSaveUnit2" prefWidth="60.0" text="Save" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="10" GridPane.valignment="CENTER">
+                                       <GridPane.margin>
+                                          <Insets right="5.0" />
+                                       </GridPane.margin>
+                                    </Button>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
